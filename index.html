@@ -15,7 +15,7 @@
         <div class="header-vverh-phone">+123 456 789</div>
 
         <div class="header-vverh-social_networks">
-          <div class="header-vverh-social_networks-insta">
+          <div class="header-vverh-social_networks-insta" onclick="window.open('https://www.instagram.com/', '_blank')">
             <svg
               width="24"
               height="24"
@@ -32,7 +32,7 @@
             </svg>
           </div>
 
-          <div class="header-vverh-social_networks-basket">
+          <div class="header-vverh-social_networks-basket" onclick="window.open('https://www.google.com/search?q=Честно,+не+знаю+что+это', '_blank')">
             <svg
               width="24"
               height="24"
@@ -49,7 +49,7 @@
             </svg>
           </div>
 
-          <div class="header-vverh-social_networks-twitter">
+          <div class="header-vverh-social_networks-twitter" onclick="window.open('https://x.com/', '_blank')">
             <svg
               width="24"
               height="24"
@@ -66,7 +66,7 @@
             </svg>
           </div>
 
-          <div class="header-vverh-social_networks-youtube">
+          <div class="header-vverh-social_networks-youtube" onclick="window.open('https://www.youtube.com/', '_blank')">
             <svg
               width="24"
               height="24"
@@ -86,17 +86,19 @@
       </div>
 
       <div class="header-vniz">
-        <div class="header-vniz-logo"><img src="img/Frame.png" alt="" /></div>
+        <div class="header-vniz-logo">
+          <img src="img/Frame.png" alt="" />
+        </div>
 
         <div class="header-vniz-nav">
           <!-- Здесь я подставил тег nav, так как ниже находится навигация по сайту -->
           <nav>
-            <a href="#">Home</a>
-            <a href="#">Pages</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact Us</a>
+            <a href="#" onclick="window.open('https://www.google.com/search?q=Home', '_blank')">Home</a>
+            <a href="#" onclick="window.open('https://www.google.com/search?q=Pages', '_blank')">Pages</a>
+            <a href="#" onclick="window.open('https://www.google.com/search?q=Services', '_blank')">Services</a>
+            <a href="#" onclick="window.open('https://www.google.com/search?q=Portfolio', '_blank')">Portfolio</a>
+            <a href="#" onclick="window.open('https://www.google.com/search?q=Blog', '_blank')">Blog</a>
+            <a href="#" onclick="window.open('https://www.google.com/search?q=Contact Us', '_blank')">Contact Us</a>
           </nav>
         </div>
       </div>
@@ -127,7 +129,12 @@
             </div>
 
             <div class="block_1-butts">
-              <div class="block_1-butt_1">Start Now</div>
+              <div
+                class="block_1-butt_1 anchor-link"
+                data-target="my-target-section"
+              >
+                Start Now
+              </div>
 
               <div class="block_1-butt_2">Learn More</div>
             </div>
@@ -139,7 +146,11 @@
         </section>
       </div>
 
-      <div class="block_2" style="padding-left: 15%; padding-right: 15%">
+      <div
+        class="block_2"
+        style="padding-left: 15%; padding-right: 15%"
+        id="my-target-section"
+      >
         <!-- Здесь я подставил тег section, так как ниже находится отдельный блок main -->
         <section>
           <!-- Здесь я подставил тег mark, ведь в макете этот текст был выделен другим цветом -->
@@ -543,7 +554,7 @@
           <div class="block_7-title"><mark>Our</mark> Testimonials</div>
 
           <div class="block_7-gallery">
-            <div class="block_7-gallery-strelka">
+            <div class="block_7-gallery-strelka prev">
               <svg
                 width="60"
                 height="60"
@@ -579,19 +590,28 @@
               </svg>
             </div>
 
-            <div class="block_7-gallery-imgs">
-              <div class="block_7-gallery-img">
-                <img src="img/Rectangle (11).png" alt="" />
-              </div>
-              <div class="block_7-gallery-img">
-                <img src="img/Rectangle (12).png" alt="" />
-              </div>
-              <div class="block_7-gallery-img">
-                <img src="img/Rectangle (13).png" alt="" />
+            <div
+              style="
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                min-height: 204px;
+              "
+            >
+              <div class="block_7-gallery-imgs">
+                <div class="block_7-gallery-img">
+                  <img src="img/Rectangle (11).png" alt="" />
+                </div>
+                <div class="block_7-gallery-img">
+                  <img src="img/Rectangle (12).png" alt="" />
+                </div>
+                <div class="block_7-gallery-img">
+                  <img src="img/Rectangle (13).png" alt="" />
+                </div>
               </div>
             </div>
 
-            <div class="block_7-gallery-strelka">
+            <div class="block_7-gallery-strelka next">
               <svg
                 width="60"
                 height="60"
@@ -796,6 +816,7 @@
               viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              onclick="window.open('https://facebook.com/', '_blank')"
             >
               <path
                 d="M11.1642 17.4974V10.6674H13.4683L13.8108 7.99323H11.1642V6.2899C11.1642 5.51823 11.3792 4.9899 12.4867 4.9899H13.89V2.60573C13.2072 2.53256 12.5209 2.49722 11.8342 2.4999C9.79749 2.4999 8.39915 3.74323 8.39915 6.02573V7.98823H6.10999V10.6624H8.40415V17.4974H11.1642Z"
@@ -809,6 +830,7 @@
               viewBox="0 0 21 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              onclick="window.open('https://web.telegram.org/', '_blank')"
             >
               <path
                 d="M19.3661 3.85196L16.7254 16.3051C16.5261 17.1838 16.0067 17.4026 15.2686 16.9888L11.2448 14.0238L9.30356 15.8913C9.08856 16.1063 8.90918 16.2857 8.49481 16.2857L8.78418 12.1882L16.2411 5.45008C16.5654 5.16133 16.1704 5.00071 15.7373 5.29008L6.51856 11.0951L2.54981 9.85258C1.68668 9.58321 1.67106 8.98946 2.72981 8.57508L18.2529 2.59446C18.9717 2.32508 19.6004 2.75446 19.3661 3.85258V3.85196Z"
@@ -822,6 +844,7 @@
               viewBox="0 0 21 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              onclick="window.open('https://www.google.com/search?q=Не+знаю+что+это', '_blank')"
             >
               <path
                 d="M4.48587 5.9975C5.49287 5.9975 6.3092 5.18116 6.3092 4.17416C6.3092 3.16716 5.49287 2.35083 4.48587 2.35083C3.47887 2.35083 2.66254 3.16716 2.66254 4.17416C2.66254 5.18116 3.47887 5.9975 4.48587 5.9975Z"
@@ -839,6 +862,7 @@
               viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              onclick="window.open('https://www.instagram.com/', '_blank')"
             >
               <path
                 d="M12.6999 10C12.6999 8.5 11.4999 7.3 9.99994 7.3C8.49994 7.3 7.29994 8.5 7.29994 10C7.29994 11.5 8.49994 12.7 9.99994 12.7C11.4999 12.7 12.6999 11.5 12.6999 10ZM14.0999 10C14.0999 12.3 12.2999 14.1 9.99994 14.1C7.69994 14.1 5.89994 12.3 5.89994 10C5.89994 7.7 7.69994 5.9 9.99994 5.9C12.2999 5.9 14.0999 7.7 14.0999 10ZM15.1999 5.7C15.1999 6.3 14.7999 6.7 14.1999 6.7C13.5999 6.7 13.1999 6.3 13.1999 5.7C13.1999 5.1 13.5999 4.7 14.1999 4.7C14.7999 4.7 15.1999 5.2 15.1999 5.7ZM9.99994 3.4C8.79994 3.4 6.29994 3.3 5.29994 3.7C4.59994 4 3.99994 4.6 3.79994 5.3C3.39994 6.3 3.49994 8.8 3.49994 10C3.49994 11.2 3.39994 13.7 3.79994 14.7C3.99994 15.4 4.59994 16 5.29994 16.2C6.29994 16.6 8.89994 16.5 9.99994 16.5C11.0999 16.5 13.6999 16.6 14.6999 16.2C15.3999 15.9 15.8999 15.4 16.1999 14.7C16.5999 13.6 16.4999 11.1 16.4999 10C16.4999 8.9 16.5999 6.3 16.1999 5.3C15.9999 4.6 15.3999 4 14.6999 3.8C13.6999 3.3 11.1999 3.4 9.99994 3.4ZM17.9999 10V13.3C17.9999 14.5 17.5999 15.7 16.6999 16.7C15.7999 17.6 14.5999 18 13.2999 18H6.69994C5.49994 18 4.29994 17.6 3.29994 16.7C2.49994 15.8 1.99994 14.6 1.99994 13.3V10V6.7C1.99994 5.4 2.49994 4.2 3.29994 3.3C4.29994 2.5 5.49994 2 6.69994 2H13.2999C14.4999 2 15.6999 2.4 16.6999 3.3C17.4999 4.2 17.9999 5.4 17.9999 6.7V10Z"
@@ -852,6 +876,7 @@
               viewBox="0 0 21 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              onclick="window.open('https://www.youtube.com/', '_blank')"
             >
               <g clip-path="url(#clip0_1_323)">
                 <path
@@ -1036,6 +1061,13 @@
       </div>
 
       <div class="footer-niz">Copyright © 2021 webtech</div>
+
+      <div class="modal" id="modal">
+        <span class="close-modal">&times;</span>
+        <img src="" alt="Image" class="modal-image" />
+      </div>
     </footer>
+    
+    <script src="index.js"></script>
   </body>
 </html>
